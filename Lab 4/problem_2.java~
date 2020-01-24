@@ -1,0 +1,48 @@
+public class problem_2
+{
+  public static void main(String[] args)
+  {
+    printStars(5);
+    
+  }
+  public static void printStars(int n)
+  {
+    int temp;
+    if (n == 0)
+    {
+      
+      System.out.println();
+    } 
+    /*else if()
+     {
+     printStars(n - 1);
+     for (int a = n; a < n; a++)
+     {
+     System.out.print("*");
+     }  
+     System.out.println("");
+     }*/
+    else
+    {
+     /* printStars(n - 1);
+      for (int a = 6; a > n; a--)
+      {
+        System.out.print("*");
+      }  */
+      //System.out.println("");
+      
+      printStars(n - 1);
+      for (int a = 6; a > n; a--)
+      {
+        System.out.print("*");
+      }  
+       System.out.println("");
+      /*for (int a = n; a < n; a++)
+      {
+        System.out.print("*");
+      }  
+      System.out.println("");*/
+    }
+  }
+  
+}

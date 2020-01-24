@@ -1,0 +1,28 @@
+public class ExtClock extends Clock
+{
+  int zone;
+  
+  public ExtClock()
+  {
+    super();
+    zone = 0;
+  }
+  public ExtClock(int hour, int min, int sec,int z)
+  {
+    super(hour,min,sec);
+    zone = z;
+  }
+  public void setZone(int z)
+  {
+    zone = z;
+  }
+  public int getZone()
+  {
+    return zone;
+  }
+  public void printTime()
+  {
+    super.printTime();
+    System.out.println("\nTime Zone: "+zone);
+  }
+}

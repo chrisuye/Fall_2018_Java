@@ -1,0 +1,124 @@
+public class Day
+
+{
+
+/* * Day Constants */
+
+private static final int SUNDAY = 0;
+
+private static final int MONDAY = 1;
+
+private static final int TUESDAY = 2;
+
+private static final int WEDNESDAY = 3;
+
+private static final int THURSDAY = 4;
+
+private static final int FRIDAY = 5;
+
+private static final int SATURDAY = 6;
+
+/** * Stores the day of the week */
+
+private int day;
+/** * A. Set the day. */
+
+public void setDay(int day)
+
+{
+
+this.day = day;
+
+}
+
+
+/** * B. Print the day */
+
+public void print()
+
+{
+
+System.out.println(this.toString());
+
+}
+/** * C. Return the day. */
+
+public int getDay()
+
+{
+
+return day;
+
+}
+/** * D. Return the next day. */
+
+public int getNextDay()
+
+{
+
+return (day + 1) % 7;
+
+}
+public String toString()
+
+{
+
+switch (this.day)
+
+{
+
+case SUNDAY: return "Sunday";
+
+case MONDAY: return "Monday";
+
+case TUESDAY: return "Tuesday";
+
+case WEDNESDAY: return "Wednesday";
+
+case THURSDAY: return "Thursday";
+
+case FRIDAY: return "Friday";
+
+case SATURDAY: return "Saturday";
+
+}
+
+return "";
+
+}
+/** * E. Return the previous day. */
+
+public int getPreviousDay()
+
+{
+
+return (day - 1) % 7;
+
+}
+
+
+/** * F. Calculate and return the day by adding certain days to the current * day. */
+
+public int addDays(int days)
+
+{
+
+return (day + days) % 7;
+
+}
+/** * G. Add the appropriate constructors. */
+
+public Day()
+
+{
+
+this.day = SUNDAY;
+
+}
+public Day(int day)
+
+{
+
+this.day = day;
+
+}

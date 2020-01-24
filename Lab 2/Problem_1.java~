@@ -1,0 +1,20 @@
+import java.io.*;
+public class Problem_1
+{
+  public static void main(String[] args)
+  {
+    try
+    {
+    Scanner ifsInput = new Scanner(new File("c:/home/text.txt"));
+      while (ifsInput.hasNextLine())
+      {
+        sLine = ifsInput.nextLine();
+        System.out.println("Line from file: " + sLine);
+      }
+    }
+    catch (FileNotFoundException sMsg)
+    {
+      System.out.print("Error");
+    }
+  }
+}

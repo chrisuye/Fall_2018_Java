@@ -1,0 +1,12 @@
+import java.util.*;
+public class problem_1
+{
+  public static void main(String[] args)
+  {
+    scanner cin = new scanner(System.in);
+    String word;
+    
+    System.out.print("Enter word");
+    
+  }
+}

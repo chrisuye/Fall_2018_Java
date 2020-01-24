@@ -1,0 +1,20 @@
+/* christian seyoum
+ * 8/30/2018
+ */
+import java.util.*;
+public class Problem_3
+{
+  public static void main(String[] args)
+  {
+    int iNum1;
+    int iNum2;
+    int iSum;
+    int idiff;
+    Scanner cin = new Scanner(System.in);
+    System.out.print("Enter Num1: ");
+    iNum1 = cin.nextInt();
+    System.out.print("Enter Num2: ");
+    iNum2 = cin.nextInt();
+    
+  }
+}

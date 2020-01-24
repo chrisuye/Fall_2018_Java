@@ -1,0 +1,24 @@
+/* christian seyoum
+ * 8/30/2018
+ */
+import java.io.*;
+public class Problem_2
+{
+  public static void main(String[] args)
+  {
+    int iNum;
+    try
+    {
+      Scanner ifsInput = new Scanner(new File("C:/Users/chris/Desktop/Fall 2018/COSC 237/Num.txt"));
+      while (ifsInput.hasNextInt())
+      {
+        iNum = ifsInput.nextInt();
+        System.out.println(iNum);
+      }
+    }
+    catch (FileNotFoundException sMsg)
+    {
+      System.out.println("E");
+    }
+  }
+}

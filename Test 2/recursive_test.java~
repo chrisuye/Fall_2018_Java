@@ -1,0 +1,18 @@
+public class recursive_test
+{
+  public static void main(String[] args)
+  {
+    mystery(10);
+  }
+public static int mystery(int n)
+ 
+{
+    if (n < 10) {
+        return n;
+    } else {
+        int a = n / 10;
+        int b = n % 10;
+        return mystery(a + b);
+    }
+}
+}

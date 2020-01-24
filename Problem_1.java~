@@ -1,0 +1,20 @@
+/* christian seyoum
+ * 8/30/2018
+ */
+
+public class Problem_1
+{
+  public static void main(String[] args)
+  {
+    double dLenght;
+    double dWidth;
+    double dArea;
+    Scanner cin = new Scanner(System.in);
+    System.out.print("Enter length: ");
+    dLength = cin.nextdouble();
+    System.out.print("Enter width: ");
+    dWidth = cin.nextdouble();
+    dArea = dLenght * dWidth;
+    System.out.println("Area= "+dArea);
+  }
+}

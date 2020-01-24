@@ -1,0 +1,24 @@
+/* christian seyoum
+ * 8/30/2018
+ */
+import java.util.*;
+public class Problem_4
+{
+  public static void main(String[] args)
+  {
+    double dP = 1000;
+    double dA;
+    double dR = .03;
+    
+    for (int iT = 1; iT <= 10; iT++)
+    {
+      System.out.println("Current balance: "+dP);
+      dA = (dP(1+(dR/iT)))^(iT);
+      System.out.println("interest: "+(dA - dp);
+      dP = dA;
+      dP = dP+200.0;      
+      System.out.println("New deposit: 200");
+      System.out.println("New balance: "+dP);
+    }
+  }
+}

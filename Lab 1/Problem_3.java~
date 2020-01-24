@@ -1,0 +1,15 @@
+/*Christian Seyoum
+ * 9/14/2018
+ */
+public class Problem_3
+{
+  public static void main(String[] args)
+  {
+    String sDate;
+    String sMonth;
+    String sDay;
+    String sYear;
+    
+    Scanner cin = new Scanner(System.in);
+  }
+}

@@ -1,0 +1,43 @@
+import java.util.*;
+public class testday
+{
+  public static void main(String[] args)
+    
+  {
+    System.out.println("Test Program For The Day Class");
+    System.out.print("\nInitial day: ");
+    
+    Day d = new Day(Day.WEDNESDAY);
+    
+    d.print();
+    System.out.print("\nNext day: ");
+    
+    d.setDay(d.getNextDay());
+    
+    d.print();
+    System.out.print("\nNext day again: ");
+    
+    d.setDay(d.getNextDay());
+    
+    d.print();
+    System.out.println("\nUsing getDay() and toString() methods");
+    
+    System.out.println("\tDay Index: " + d.getDay());
+    
+    System.out.println("\tDay Name: " + d);
+    System.out.print("\nPrevious day: ");
+    
+    d.setDay(d.getPreviousDay());
+    
+    d.print();
+    System.out.print("\nNext week: ");
+    
+    d.setDay(d.addDays(7));
+    d.print();
+    System.out.print("\nAdd 3 days: ");
+    
+    d.setDay(d.addDays(3));
+    
+    d.print();
+  }
+}
